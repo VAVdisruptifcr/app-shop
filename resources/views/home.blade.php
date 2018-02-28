@@ -94,7 +94,7 @@
                         {{ csrf_field() }}
 
                         <button class="btn btn-primary btn-round" >
-                            <i class="material-icons">done</i> EECTUAR PEDIDO
+                            <i class="material-icons">done</i> EFECTUAR PEDIDO
                         </button>
                     </form>
                 </div>

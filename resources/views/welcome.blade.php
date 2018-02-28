@@ -28,7 +28,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h1 class="title">Bienvenido a Disruptifcr tienda en línea.</h1>
+                            <h1 class="title">Bienvenido a CustomApp tu tienda en línea.</h1>
                             <h4>Realiza tus pedidos desde la comodidad de tu hogar y en breve estaremos contactando contigo para hacer la entrega de tus compras en tu domicilio.</h4>
                             <br />
                             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
