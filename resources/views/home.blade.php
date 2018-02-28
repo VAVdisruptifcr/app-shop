@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                     <hr>
-                    <h3>Tu cesta de compras contiene {{ auth()->user()->cart->details->count() }} productos.</h3>
+                    <p>Tu cesta de compras contiene {{ auth()->user()->cart->details->count() }} productos.</p>
                    
                 <table class="table">
                     <thead>
