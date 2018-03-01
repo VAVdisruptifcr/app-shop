@@ -26,6 +26,13 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->namespace('Admin')->group
 		Route::delete('/products/{id}/images', 'ImageController@destroy'); //formulario eliminar
 		Route::get('/products/{id}/images/select/{image}', 'ImageController@select'); //destacar
 
+		Route::get('/categories', 'CategoryController@index'); //ruta listado
+		Route::get('/categories/create', 'CategoryController@create'); //ruta formulario
+		Route::post('/categories', 'CategoryController@store'); //ruta registro
+		Route::get('/categories/{category}/edit', 'CategoryController@edit'); //ruta de edición
+		Route::post('/categories/{category}/edit', 'CategoryController@update'); //actualización
+		Route::delete('/categories/{category}', 'CategoryController@destroy'); //formulario eliminar
+
 
     });
 

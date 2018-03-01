@@ -54,9 +54,13 @@
                                     </li>
                                     @if (auth()->user()->admin)
                                     <li>
+                                        <a href=" {{ url('/admin/categories')}} ">Gestionar categorías</a>
+                                    </li>
+                                    <li>
                                         <a href=" {{ url('/admin/products')}} ">Gestionar productos de la tienda</a>
                                     </li>
                                     @endif
+
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

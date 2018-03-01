@@ -26,7 +26,14 @@ class Product extends Model
         if ($featuredImage) {
            return $featuredImage->url;
         }
-        return '/images/products/default.jpg';
-        
+        return '/images/products/default.jpg';    
+    }
+      // accesor
+    public function getCategoryNameAtributte()
+    {
+        if ($this->category) 
+            return $this->category->name;
+                
+        return 'General';     
     }
 }

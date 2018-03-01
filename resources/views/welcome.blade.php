@@ -7,18 +7,21 @@
 @section('styles')
     <style>
         .team .row .col-md-4 {
-            margin-bottom: 5em;
+            margin-bottom: 3em;
         }
         .row {
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
-          display:         flex;
+          display: flex;
           flex-wrap: wrap;
         }
         .row > [class*='col-'] {
           display: flex;
           flex-direction: column;
+        }
+        h1 {
+            margin-bottom: 0;
         }
     </style>
 @endsection
@@ -27,12 +30,13 @@
     <div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-11">
                             <h1 class="title">Bienvenido a CustomApps API Taylors.</h1>
-                            <h4>Desarrollo de web apps a la medida de sus necesidades para la era digital.</h4>
-                            <br />
+                            <h3>Desarrollo de web apps para la era digital a la medida de tus necesidades.</h3>
+                        </div>
+                        <div class="col-md-3">
                             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
-                                <i class="fa fa-play"></i> Mira como funciona
+                            <i class="fa fa-play"></i> Es tu día de suerte
                             </a>
                         </div>
                     </div>
@@ -93,8 +97,9 @@
                                 <img src="{{ $product->featured_image_url }}" alt="Thumbnail Image" class="img-raised img-circle">
 
                                 <h4 class="title">
-                                <a href="{{ url('/products/'.$product->id) }}"> {{ $product->name }} </a>  <br />
-                                    <small class="text-muted">{{ $product->category ? $product->category->name : 'General' }}</small>
+                                <a href="{{ url('/products/'.$product->id) }}"> {{ $product->name }} </a>
+                                <br>
+                                    <small class="text-muted">{{ $product->category_name }}</small>
                                 </h4>
                                 <p class="description"> {{ $product->description }} </p>
                                 
@@ -112,9 +117,9 @@
 
             <div class="section landing-section">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="text-center title">Vende con Nosotros</h2>
-                        <h4 class="text-center description">Tienes un producto bueno para que vendamos en nuestra tienda? Deseamos conocerlo y darle un lugar adecuado dentro de nuestra plataforma. Anímate a obtener ganancias hoy mismo con nosotros.</h4>
+                    <div class="col-md-9 col-md-offset-2">
+                        <h2 class="text-center title">Crea con Nosotros</h2>
+                        <h4 class="text-center description">Tienes un proyecto en mente del cual nos podamos hacer cargo y confeccionar algo maravillosamente útil para tu negocio o emprendimiento? Deseamos que nos cuentes un poco más. Lo leeremos, y, si lo indicas, en instantes estarás recibiendo nuestro presupuesto para tu proyecto.</h4>
                         <form class="contact-form">
                             <div class="row">
                                 <div class="col-md-6">
